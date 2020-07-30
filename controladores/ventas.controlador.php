@@ -123,6 +123,8 @@ class ControladorVentas
 
 				// $imprimir -> close();
 
+				/* //ESTA OPCION SE ACTIVA SIEMPRE Y CUANDO ESTE CONECTADO LA IMPRESORA
+
 				$impresora = "epson20";
 
 				$conector = new WindowsPrintConnector($impresora);
@@ -195,7 +197,7 @@ class ControladorVentas
 
 				$printer -> pulse(); //Por medio de kla impresora mandamos un pulso, es util cuando hay cajon monedero
 
-				$printer -> close();
+				$printer -> close();*/
 				
 				echo '<script>
 
