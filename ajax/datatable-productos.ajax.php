@@ -35,11 +35,11 @@ class TablaProductos
 
 			  		}			  		
 
-			  		$item = "id";
-			  		$valor = $productos[$i]["id_categoria"];
+			  		$item2 = "id";
+			  		$valor2 = $productos[$i]["id_categoria"];
 
-			  		$categoria = ControladorCategorias::ctrMostrarCategorias($item, $valor);
-
+			  		$categoria = ControladorCategorias::ctrMostrarCategorias($item2, $valor2);
+					// print_r($categoria);exit();
 			  		if ($productos[$i]["stock"] <= 10) {
 
 			  			$stock = "<button class='bt btn-danger'>".$productos[$i]["stock"]."</button>";

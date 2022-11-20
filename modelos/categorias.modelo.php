@@ -44,10 +44,10 @@ class ModeloCategorias extends Conexion
 	static public function mdlMostrarCategorias($tabla, $item, $valor){
 
 		if ($item != null) {
-			
+			// print_r($valor);
 			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
 
-			$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+			$stmt -> bindParam(":".$item, $valor, PDO::PARAM_INT);
 
 			$stmt -> execute();
 
